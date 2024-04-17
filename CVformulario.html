@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="FormCVstyle.css">
+</head>
+<body>
+    <div class = "contenedor1">
+        <div class = "header">
+            <div class="grupo_header">
+                <div class="photo">
+                    <img
+                    class="foto-perfil"
+                    src="https://media.tenor.com/NPFbJouWeHQAAAAM/cr7-siuu.gif"
+                    height="180"
+                    width="180">
+                </div>
+                <div class="nombree">
+                    <h3> <span id="nombre"> </span> </h3>
+                    <h1><span id="ocupacion"></span> </h1> <!-- probar con aptitudes-->
+                    
+                    <h1> </h1>
+                </div>
+            </div>
+
+            <p>Fecha de Nacimiento: <span id="fecha_nacimiento"></span></p>
+            <p>Nacionalidad: <span id="nacionalidad"></span></p>
+            
+            
+            <!-- <p>Perfil Personal: <span id="perfil"></span></p> -->
+
+        </div>
+        <div class = "parte_inferior">
+            <div class = "barra_izq">
+                <h4>CONTACTO</h4>
+                <hr>
+                <ul class = "contqctoo">
+                    <li>
+                        <span class = "icon"><i class="fa-solid fa-phone"></i></span>
+                        <span class = "text"><span id="telefono"></span></span>
+                    </li>
+                    <li>
+                        <span class = "icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span class = "text"><span id="email"></span></span>
+                    </li>
+                    <li>
+                        <span class = "icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <span class = "text">Arequipa,Peru</span>
+                    </li>
+                    <li>
+                        <span class = "icon"><i class="fa-brands fa-square-instagram"></i></span>
+                        <span class = "text"><span id="ig"></span></span>
+                    </li>
+                </ul>
+    
+                <h4>IDIOMAS</h4>
+                <hr>
+                <ul class = "idiomas">
+                    <li class = "text"> Español: Nativo</li>
+                    <li class = "text"> Inglés:<span id="nivel_ingles"></span></li>    
+                    <li class = "text"> Francés:<span id="nivel_frances"></span></li>
+                </ul>
+    
+                <h4>APTITUDES</h4>
+                <hr>
+                <ul class="aptitudes_listaa">
+                    <li class="text"><span id="aptitudes"></span></li> <!-- si funciona, extender a los demas items-->
+                    <li class="text">Análisis de datos</li>
+                    <li class="text">Machine Learning</li>
+                    <li class="text">Visualización de datos - Tableau - Power BI</li>
+                </ul>
+    
+                <h4>HARD SKILLS</h4><!--poner aqui los lenguajes de p-->
+                <hr> 
+               <span id="lenguajes_programacion"></span>
+                <ul class="intereses">
+                    <li class="text">Bases de datos - SQL</li>    
+                    <li class="text">Machine Learning</li>
+                </ul>
+                
+                <h4>SOFT SKILLS</h4><!--habilidades-->
+                <hr>
+                <ul class="habilidades_listaa">
+                    <li class="text"><span id="habilidades"></span></li>
+                </ul>
+                
+            </div>
+            <div class="barra_der">
+                <h4>DESCRIPCIÓN</h4>
+                <hr>
+                <div class="formacion">
+                    <p><span id="perfil"></span></p>
+                </div>
+            
+                <h4>EXPERIENCIA LABORAL</h4>
+                <hr>
+                <div class="experiencia">
+                    <div class="exp">
+                        <h5>Gerente de Marketing</h5>
+                        <div class="fecha_ubicacion">
+                            <span class="ciudad">Nueva York</span>, | <span class="tiempo">2019-2023</span>
+                        </div>
+                        <ul class="roles">
+                            <li class="text">Lideré equipos multidisciplinarios para crear estrategias de marketing innovadoras que aumentaron las ventas en un 30%.</li>
+                            <li class="text">Desarrollé campañas publicitarias creativas que posicionaron nuestra marca como líder en el mercado.</li>
+                            <li class="text">Establecí alianzas estratégicas con influencers y celebridades para promover nuestros productos.</li>
+                        </ul>
+                    </div>
+            
+                    <div class="exp">
+                        <h5>Especialista en Desarrollo de Negocios</h5>
+                        <div class="fecha_ubicacion">
+                            <span class="ciudad">Londres</span>, | <span class="tiempo">2017-2019</span>
+                        </div>
+                        <ul class="roles">
+                            <li class="text">Identifiqué oportunidades de crecimiento y expansión para la empresa en mercados internacionales.</li>
+                            <li class="text">Negocié contratos comerciales favorables con socios estratégicos para aumentar la presencia de la marca en nuevos territorios.</li>
+                        </ul>
+                    </div>
+            
+                    <div class="exp">
+                        <h5>Asistente de Investigación</h5>
+                        <div class="fecha_ubicacion">
+                            <span class="ciudad">Berlín</span>, | <span class="tiempo">2015-2017</span>
+                        </div>
+                        <ul class="roles">
+                            <li class="text">Colaboré en proyectos de investigación que resultaron en publicaciones académicas de alto impacto.</li>
+                            <li class="text">Recopilé y analicé datos cualitativos y cuantitativos para apoyar la toma de decisiones estratégicas.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <h4>FORMACIÓN</h4>
+                <hr>
+                <div class="formacion">
+                    <div class="formac">
+                        <h5><span id="formacion1"></span></h5>
+                        <div class="fecha_ubicacion">
+                            <span class="ciudad">Harvard Business School</span>, | <span class="tiempo">2013-2015</span>
+                        </div>
+                    </div>
+            
+                    <div class="formac">
+                        <h5><span id="formacion2"></span></h5>
+                        <div class="fecha_ubicacion">
+                            <span class="ciudad">Universidad de Oxford</span>, | <span class="tiempo">2009-2013</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span id="perfil"></span>
+            <span class = "text"><span id="telefono"></span></span>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    // Retrieve form data from URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const nombre = urlParams.get('nombre');
+    const fecha_nacimiento = urlParams.get('fecha_nacimiento');
+    const ocupacion = urlParams.get('ocupacion');
+    const telefono = urlParams.get('telefono');
+    const email = urlParams.get('email');
+    const ig = urlParams.get('ig');
+    const nacionalidad = urlParams.get('nacionalidad');
+    const nivel_ingles = urlParams.get('nivel_ingles');
+    const nivel_frances = urlParams.get('nivel_frances');
+    const lenguajes_programacion = urlParams.getAll('lenguajes_programacion');
+    const aptitudes = urlParams.get('aptitudes');
+    const habilidades = urlParams.getAll('habilidades');
+    const perfil = urlParams.get('perfil');
+    const formacion1 = urlParams.get('formacion1');
+    const formacion2 = urlParams.get('formacion2');
+
+    // Update HTML elements with form data
+    document.getElementById('nombre').innerText = nombre;
+    document.getElementById('fecha_nacimiento').innerText = fecha_nacimiento;
+    document.getElementById('ocupacion').innerText = ocupacion;
+    document.getElementById('telefono').innerText = telefono;
+    document.getElementById('email').innerText = email;
+    document.getElementById('ig').innerText = ig;
+    document.getElementById('nacionalidad').innerText = nacionalidad;
+    document.getElementById('nivel_ingles').innerText = nivel_ingles;
+    document.getElementById('nivel_frances').innerText = nivel_frances;
+    document.getElementById('lenguajes_programacion').innerText = lenguajes_programacion.join(', ');
+    document.getElementById('aptitudes').innerText = aptitudes;
+    document.getElementById('habilidades').innerText = habilidades.join(', ');;
+    document.getElementById('perfil').innerText = perfil;
+    document.getElementById('formacion1').innerText = formacion1;
+    document.getElementById('formacion2').innerText = formacion2;
+</script>
+
+</html>
